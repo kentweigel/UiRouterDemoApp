@@ -23,7 +23,8 @@ bld/
 [Oo]bj/
 
 # .config files
-Web*.config
+Web.config
+Web.*.config
 App.Config
 
 # Migrations folder
