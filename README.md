@@ -1,6 +1,6 @@
 UiRouterDemoApp
 
-A simple implementation of ui-router, for quick reference. Static sample data is provided by WebAPI.
+A simple implementation of ui-router, for quick reference.
 
 Steps:
 1. Add a reference to the angular-ui-router.js file in index.html.
@@ -27,4 +27,4 @@ Remember: A "state" corresponds to a "place" in the application.
 			...
 		});
 
-5. Wherever you are providing navigation controls, use the ui-sref attribute, rather than the href attribute (like with ngRoute) to choose the state/route to navigate to.
+5. Wherever you are providing navigation controls, use the ui-sref attribute, rather than the href attribute (like with ngRoute) to specify the name of the state/route to navigate to.
