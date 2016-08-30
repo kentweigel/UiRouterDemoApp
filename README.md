@@ -7,10 +7,15 @@ A simple implementation of ui-router, for quick reference.
 
 2. Add a module dependency for "ui.router" when you create the module in JavaScript.
 
-3. Where you want the content of the router to go, (in html) add (ui-view></ui-view>.
+3. Find where you want the content of the router to go in HTML and add:	
+
+	```HTML
+		<ui-view></ui-view>
+	```
 
 4. Inside a call to module(...).config(), configure states with one or more call to $stateProvider.state, passing it a state name and an object with configuration properties. Example:
 
+	```JavaScript
 	var app = angular
 		.module("App", ["ui.router"])
 		.config(function($stateProvider) {
@@ -24,6 +29,7 @@ A simple implementation of ui-router, for quick reference.
 
 			...
 		});
+	```
 
 5. Wherever you are providing navigation controls, use the ui-sref attribute, rather than the href attribute (like with ngRoute) to specify the name of the state/route to navigate to.
 
